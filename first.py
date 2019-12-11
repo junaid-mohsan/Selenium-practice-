@@ -1,3 +1,3 @@
 print("junaid")
 
-print ("mohsan")
+print ("")
