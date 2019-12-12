@@ -1,3 +1,0 @@
-print("junaid")
-
-print ("c")

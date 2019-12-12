@@ -10,12 +10,12 @@ class EdxLogin(unittest.TestCase):
         self.driver.get("https://mckinsey:academy@qa.mckinsey.edx.org/")
         self.driver.find_element_by_css_selector('a[id="djHideToolBarButton"]').click()
 
-        self.driver.find_element_by_css_selector('#login_id').send_keys("junaid")
+        self.driver.find_element_by_css_selector('#login_id').send_keys("")
 
         self.driver.find_element_by_css_selector('button[id="login"]').click()
         time.sleep(3)
 
-        self.driver.find_element_by_css_selector('#password').send_keys("ARbi12.,")
+        self.driver.find_element_by_css_selector('#password').send_keys("")
         self.driver.find_element_by_css_selector('button[id="login"]').click()
         time.sleep(3)
 
