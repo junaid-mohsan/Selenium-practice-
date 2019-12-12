@@ -2,7 +2,7 @@ from selenium import webdriver
 import unittest
 import time
 
-class EdxLogin(unittest.TestCase): 
+class MckLogin(unittest.TestCase): 
     def setUp(self):
         self.driver = webdriver.Chrome("C:\Drivers\chromedriver_win32\chromedriver.exe")
         
