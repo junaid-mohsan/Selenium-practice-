@@ -27,14 +27,7 @@ class MckLogin(unittest.TestCase):
         time.sleep(5)
         # Print the dashboard title s
         print(self.driver.title)
-        # Find and Click on the admin link
-        self.driver.find_element_by_xpath('/html/body/header/div/div/div/div/div[2]/nav/ul/li[2]/a').click()
-        time.sleep(5)
-        # Find and Click on the course link
-        self.driver.find_element_by_xpath('//*[@id="admin-body"]/header/div[1]/div/nav/ul/li[1]/a').click()
-        time.sleep(3)
-        # Find and write on the search bar to find the results
-        self.driver.find_element_by_css_selector('input[name="search"]').send_keys("test/01/2019")
+        self.assertIn('Academy', self.driver.title)
         time.sleep(3)
         
     def tearDown(self):
