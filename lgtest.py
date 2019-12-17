@@ -15,17 +15,17 @@ class MckLogin(unittest.TestCase):
         #To hid the right side bar
         self.driver.find_element_by_css_selector('#djHideToolBarButton').click()
         # Find and fill the username field
-        self.driver.find_element_by_css_selector('#login_id').send_keys("junaid")
+        self.driver.find_element_by_css_selector('#login_id').send_keys("")
         # Find and click on the login button  
         self.driver.find_element_by_css_selector('button[id="login"]').click()
         time.sleep(3)
         # Find and fill the password field
-        self.driver.find_element_by_css_selector('#password').send_keys("ARbi12.,")
+        self.driver.find_element_by_css_selector('#password').send_keys("")
         time.sleep(3)
         # Find and click on the login button 
         self.driver.find_element_by_css_selector('button[id="login"]').click()
         time.sleep(5)
-        # Print the dashboard title 
+        # Print the dashboard title s
         print(self.driver.title)
         # Find and Click on the admin link
         self.driver.find_element_by_xpath('/html/body/header/div/div/div/div/div[2]/nav/ul/li[2]/a').click()
