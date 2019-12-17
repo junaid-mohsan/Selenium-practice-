@@ -13,7 +13,7 @@ class MckLogin(unittest.TestCase):
         #To check the title of website
         self.assertIn('Academy', self.driver.title)
         #To hid the right side bar
-        self.driver.find_element_by_css_selector('a[id="djHideToolBarButton"]').click()
+        self.driver.find_element_by_css_selector('#djHideToolBarButton').click()
         # Find and fill the username field
         self.driver.find_element_by_css_selector('#login_id').send_keys("junaid")
         # Find and click on the login button  
