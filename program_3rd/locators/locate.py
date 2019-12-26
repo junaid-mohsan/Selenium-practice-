@@ -1,12 +1,13 @@
 class locator():
 
+    #Login page objects
+    username_id = "#login-email"
+    password_id = "#login-password"
+    login_btn = "button[type='submit']"
 
-    self.username_id = "#login-email"
-    self.password_id = "#login-password"
-
-
-    self.email_id = "#register-email"
-    self.name_id = "#register-name"
-    self.username_id = "#register-username"
-    self.password_id = "#register-password"
-    self.countrydropdown_id = "#register-country"
+    #Register page objects
+    email_id = "#register-email"
+    name_id = "#register-name"
+    username_id = "#register-username"
+    password_id = "#register-password"
+    countrydropdown_id = "#register-country"

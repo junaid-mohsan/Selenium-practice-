@@ -1,7 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 import unittest
 import time
 from pages.loginpage import LoginPage
@@ -37,11 +35,11 @@ class McK_login(unittest.TestCase):
         # Page Register    
         self.driver.find_element_by_link_text('Register').click()
         self.assertTrue(self.register.is_browser_on_the_regpage())
-        self.register.regemail('')
-        self.register.regname('')
-        self.register.regusername('')
-        self.register.regpassword('')
-        self.register.regcountry('')
+        self.register.regemail('zeezddd12@yopmail.com')
+        self.register.regname('zeedd')
+        self.register.regusername('zeeddzzz1')
+        self.register.regpassword('Gillgill12!@')
+        self.register.regcountry('Pakistan')
         self.register.submitButton()
         self.assertTrue(self.dashboard.is_browser_on_the_page())
         self.register.logout()
