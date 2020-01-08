@@ -33,17 +33,17 @@ class McK_login(unittest.TestCase):
         self.assertTrue(self.register.is_browser_on_the_hpage())
         
         # Page Register    
-        self.driver.find_element_by_link_text('Register').click()
-        self.assertTrue(self.register.is_browser_on_the_regpage())
-        self.register.regemail('zeezddd12@yopmail.com')
-        self.register.regname('zeedd')
-        self.register.regusername('zeeddzzz1')
-        self.register.regpassword('Gillgill12!@')
-        self.register.regcountry('Pakistan')
-        self.register.submitButton()
-        self.assertTrue(self.dashboard.is_browser_on_the_page())
-        self.register.logout()
-        self.assertTrue(self.register.is_browser_on_the_hpage())
+        # self.driver.find_element_by_link_text('Register').click()
+        # self.assertTrue(self.register.is_browser_on_the_regpage())
+        # self.register.regemail('zeezddd12@yopmail.com')
+        # self.register.regname('zeedd')
+        # self.register.regusername('zeeddzzz1')
+        # self.register.regpassword('Gillgill12!@')
+        # self.register.regcountry('Pakistan')
+        # self.register.submitButton()
+        # self.assertTrue(self.dashboard.is_browser_on_the_page())
+        # self.register.logout()
+        # self.assertTrue(self.register.is_browser_on_the_hpage())
         
         
     def tearDown(self):
